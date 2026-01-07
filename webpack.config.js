@@ -33,7 +33,7 @@ module.exports = (env = {}) => {
         },
         plugins: [
             new ModuleFederationPlugin({
-                name: "dummyRemote",
+                name: "counter",
                 filename: "remoteEntry.js",
                 exposes: {
                     "./App": "./src/Counter",
