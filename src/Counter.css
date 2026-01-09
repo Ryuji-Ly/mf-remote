@@ -7,6 +7,15 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Override styles when running in host */
+.counter-container.counter-host {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: none;
+}
+
 .counter-display {
     display: flex;
     align-items: baseline;
@@ -43,4 +52,20 @@
 
 .counter-button:active {
     background: #21618c;
+}
+
+/* Override button styles when running in host */
+.counter-host .counter-button {
+    background: #0d6efd;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.counter-host .counter-button:hover {
+    background: #0b5ed7;
+}
+
+.counter-host .counter-button:active {
+    background: #0a58ca;
 }
