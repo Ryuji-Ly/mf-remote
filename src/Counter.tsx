@@ -16,17 +16,6 @@ const Counter: React.FC = () => {
 
     return (
         <div className={inHost ? "counter-container counter-host" : "counter-container"}>
-            <div style={{ marginBottom: "12px" }}>
-                <span style={{ 
-                    fontSize: "11px", 
-                    padding: "4px 8px", 
-                    borderRadius: "4px",
-                    backgroundColor: inHost ? "#e0f2fe" : "#fef3c7",
-                    color: inHost ? "#0369a1" : "#92400e",
-                    fontWeight: 500
-                }}>
-                </span>
-            </div>
             <div className="counter-display">
                 <span className="counter-label">Count:</span>
                 <span className="counter-value">{count}</span>
