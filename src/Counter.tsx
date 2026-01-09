@@ -25,7 +25,6 @@ const Counter: React.FC = () => {
                     color: inHost ? "#0369a1" : "#92400e",
                     fontWeight: 500
                 }}>
-                    {inHost ? "Running in Host" : "Running Standalone"}
                 </span>
             </div>
             <div className="counter-display">

@@ -9,11 +9,11 @@
 
 /* Override styles when running in host */
 .counter-container.counter-host {
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
+    background: white;
+    border: none;
+    border-radius: 8px;
     padding: 20px;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .counter-display {
@@ -25,47 +25,45 @@
 }
 
 .counter-label {
-    color: #666;
+    color: #333;
+    font-weight: 600;
 }
 
 .counter-value {
     font-size: 36px;
     font-weight: 600;
-    color: #2c3e50;
+    color: #52C77B;
 }
 
 .counter-button {
-    background: #3498db;
+    background: #52C77B;
     color: white;
     border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
+    padding: 10px 16px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.2s;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.1s ease;
 }
 
 .counter-button:hover {
-    background: #2980b9;
+    background: #3aa76d;
+    transform: scale(1.03);
+    filter: brightness(1.08);
 }
 
 .counter-button:active {
-    background: #21618c;
+    background: #2d8a57;
+    transform: scale(1);
+    filter: brightness(1);
 }
 
-/* Override button styles when running in host */
+/* Host-specific overrides to match checkin exactly */
 .counter-host .counter-button {
-    background: #0d6efd;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 14px;
+    background: #52C77B;
 }
 
 .counter-host .counter-button:hover {
-    background: #0b5ed7;
-}
-
-.counter-host .counter-button:active {
-    background: #0a58ca;
+    background: #3aa76d;
 }
